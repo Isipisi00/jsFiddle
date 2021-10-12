@@ -15,11 +15,14 @@ titulo.forEach( (listH2, i) => {
     */
 
     titulo[i].addEventListener('click', ()=>{
-        if(bloque[i].classList.contains('activo')){
+        
+        bloque[i].classList.toggle('activo')
+
+        /*if(bloque[i].classList.contains('activo')){
             bloque[i].classList.remove('activo')
         }else{
             bloque[i].classList.add('activo')
-        }
+        }*/
     })
 
 });

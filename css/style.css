@@ -16,15 +16,16 @@
 
 .acordeon .content{
     height: 0;
-    padding: 0em;
+    opacity: 0;
     overflow: hidden;
-    transition: all 0.5s ease;
+    transition: ease-out 0.5s;
 }
 
 .acordeon .bloque.activo .content{
+    opacity: 1;
     height: fit-content;
     max-height: 80em;
-    transition: all 0.5s ease;
+    transition: ease-in 0.5s;
 
 }
 
