@@ -4,8 +4,7 @@
 }
 
 .acordeon .bloque{
-    margin: 1em;
-    padding: 0, 0, 1em;
+    text-align: center;
 }
 
 .acordeon .titulo{
@@ -18,14 +17,29 @@
     height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: ease-out 0.5s;
+}
+
+.titulo i{
+    box-align: right;
 }
 
 .acordeon .bloque.activo .content{
     opacity: 1;
     height: fit-content;
     max-height: 80em;
-    transition: ease-in 0.5s;
-
+    transition: all 0.5s ease;
 }
 
+.acordeon .fas{
+    float: right;
+}
+
+.acordeon .bloque.activo .fas{
+    transition: 0.25s ease;
+    transform: rotate(-90deg);
+}
+
+.acordeon .bloque .fas{
+    transition: 0.25s linear;
+    transform: rotate(0deg);
+}
