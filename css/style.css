@@ -28,6 +28,7 @@
     height: fit-content;
     max-height: 80em;
     transition: all 0.5s ease;
+    transform: rotateY(0);
 }
 
 .acordeon .fas{
