@@ -5,22 +5,26 @@
 
 .acordeon .bloque{
     margin: 1em;
-    padding: 2em;
+    padding: 0, 0, 1em;
 }
 
 .acordeon .titulo{
+    cursor: pointer;
     margin: 1em;
-    padding: 2em;
+    padding: 0, 0, 1em;
 }
 
 .acordeon .content{
     height: 0;
     padding: 0em;
     overflow: hidden;
-    transition: all 0.5s;
+    transition: all 0.5s ease;
 }
 
 .acordeon .bloque.activo .content{
-    height: 2rem;
+    height: fit-content;
+    max-height: 80em;
+    transition: all 0.5s ease;
+
 }
 
