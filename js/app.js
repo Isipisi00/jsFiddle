@@ -1,28 +1,25 @@
 const bloque = document.querySelectorAll('.bloque')
 const titulo = document.querySelectorAll('.titulo');
 
-titulo.forEach( (listH2, i) => {
-    /*
-    titulo[i].addEventListener('click', (e)=>{
-        bloque.forEach((listBloque, i)=>{
-            bloque[i].classList.remove('activo')
-        })
-
-        bloque[i].classList.add('activo')
-        e.target;
-        
-    })
-    */
+/*titulo.forEach( (listH2, i) => {
 
     titulo[i].addEventListener('click', ()=>{
-        
-        bloque[i].classList.toggle('activo')
-
-        /*if(bloque[i].classList.contains('activo')){
-            bloque[i].classList.remove('activo')
-        }else{
-            bloque[i].classList.add('activo')
-        }*/
+        bloque[i].classList.add('activo')
     })
 
-});
+});*/
+
+titulo.forEach((listH2, i)=>{
+    bloque[i].classList.remove('activo', 'esconder')
+    titulo[i].addEventListener('click', ()=>{
+        if(bloque[i].classList.contains('activo')){
+            bloque[i].classList.remove('activo')
+            bloque[i].classList.add('esconder')
+        }else{
+            bloque[i].classList.remove('esconder')
+            bloque[i].classList.add('activo')
+        }
+    })
+})
+
+
